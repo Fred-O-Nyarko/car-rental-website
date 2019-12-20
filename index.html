@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    /> -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel='stylesheet' href="https://cdn.materialdesignicons.com/4.7.95/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+  <link href="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/v4.0.0/build/css/bootstrap-datetimepicker.css"
+    rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+  <title>SWOOSH Rental Services</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" style="font-weight: 800">
+          <!-- <img src="../../logo.PNG" alt="" /> -->
+          SWOOSH! Rental Services
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">HOME
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="checkout.html">CARS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html" >LOGIN</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="jumbotron jumbotron-fluid" id="background">
+    <section class="hero text-left" style="padding-top: 10px;">
+      <div class="container-fluid">
+        <div class="row justify-content-center justify-content-lg-start">
+          <div class="col-md-10 col-xxl-8">
+            <div style="color: white; font-size: 2rem;">
+              WELCOME TO SWOOSH!
+            </div>
+            <h1 class="display-4" style="font-family: Poppins, sans-serif; padding-top:2rem;">
+              <strong>RENT YOUR CARS FROM US!<br />SAVE UP TO 25%</strong>
+            </h1>
+
+            <p class="lead" style="padding: 2rem 0rem 2rem; color: rgb(116, 116, 116); font-weight: 800;">
+              Swoosh makes car renting an easy matter, even if you are
+              renting<br />
+              out a sports coupe for a weekend ride. We will make sure your<br />
+              car will fit your specific needs!
+            </p>
+            <div class="btn btn-primary" style="font-weight: 800;">
+              RENT A CAR!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="seection section-lg bg-default" id="car-search">
+    <div class="container">
+      <h3 class="text-center wow bounceInDown" style="color: rgb(58, 55, 55); font-weight: 900; padding: 4rem 0rem 4rem 0rem; visibility: visible; animation-name:fadeIn">
+        FIND YOUR PERFECT CAR
+      </h3>
+
+      <div class="jumbotron" id="search-container">
+        <form style="margin: auto;">
+          <div class="form-group row justify-content-center ">
+            <div class="form-group col-lg-3">
+              <select class="form-control form-control-lg">
+                <option selected>
+                  Car Type
+                </option>
+                <option>Convertible</option>
+                <option>Coupe</option>
+                <option>Crossover</option>
+                <option>SUV</option>
+                <option>MPV</option>
+                <option>Sedan</option>
+                <option>Hatchback</option>
+              </select>
+            </div>
+
+            <div class="form-group col-lg-3">
+              <select class="form-control form-control-lg">
+                <option selected>
+                  Pickup Location
+                </option>
+                Greater London
+                <option>South East</option>
+                <option>South West</option>
+                <option>West Midlands</option>
+                <option>North West</option>
+                <option>North East</option>
+                <option>Yorkshire and the Humber</option>
+                <option>East Midlands</option>
+                <option>East of England</option>
+              </select>
+            </div>
+
+              <div class="form-group col-lg-3">
+                <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                  <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" />
+                  <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                  </div>
+                </div>
+              </div>
+          
+
+            
+              <button type="button" class="btn btn-primary btn-lg"
+                style="padding-left: 20px; padding-right: 20px;"><a href="checkout.html" style="transition:none; color:#fff">Search Now</a></button>
+            
+          </div>
+        </form>
+      </div>
+
+  </section>
+
+  <div class="section section-lg bg-default" id="car-types">
+    <div class="container">
+      <div class="row row-30 row-lg-60">
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <img class="card-img-full" src="./124068.jpg" alt="Mustang" style="max-width: 370px; height: 270px;" />
+          </div>
+          <h3 class="card-title">
+            <a href="">Mustang</a>
+          </h3>
+
+          <div class="card-price">
+            <h5 class="price">$30</h5>
+            <div class="text">per day</div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <img class="card-img-full" src="./1.jpg" alt="Chevrolet" style="max-width: 370px; height: 270px;" />
+          </div>
+          <h3 class="card-title">
+            <a href="">Chevrolet</a>
+          </h3>
+
+          <div class="card-price">
+            <h5 class="price">$45</h5>
+            <div class="text">per day</div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <img class="card-img-full" src="./2.jpg" alt="Mercedes Benz" style="max-width: 370px; height: 270px;" />
+          </div>
+          <h3 class="card-title">
+            <a href="">Mercedes Benz</a>
+          </h3>
+
+          <div class="card-price">
+            <h5 class="price">$70</h5>
+            <div class="text">per day</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <img class="card-img-full" src="./3.jpg" alt="Jaguar" style="max-width: 370px; height: 270px;" />
+          </div>
+          <h3 class="card-title">
+            <a href="">Jaguar</a>
+          </h3>
+
+          <div class="card-price">
+            <h5 class="price">$35</h5>
+            <div class="text">per day</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <img class="card-img-full" src="./4.jpg" alt="Toyota" style="max-width: 370px; height: 270px;" />
+          </div>
+          <h3 class="card-title">
+            <a href="">Toyota</a>
+          </h3>
+
+          <div class="card-price">
+            <h5 class="price">$25</h5>
+            <div class="text">per day</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <img class="card-img-full" src="./5.jpg" alt="Audi" style="max-width: 370px; height: 270px;" />
+          </div>
+          <h3 class="card-title">
+            <a href="">Audi</a>
+          </h3>
+
+          <div class="card-price">
+            <h5 class="price">$30</h5>
+            <div class="text">per day</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="offers">
+    <div class="container">
+      <div class="row row-lg-60 justify-content-center">
+        <div class="col-lg-9 text-center">
+          <div class="row row-lg-60 row-xxl-85">
+            <div class="col-sm-6 col-md-4" id="offers-col-sm-6">
+              <h5>
+                <span class="text-primary">1.&nbsp;</span>
+                Car Rentals
+              </h5>
+              <ul class="list-xs">
+                <li>
+                  <a class="link-item" href="">
+                    Economy
+                  </a>
+                </li>
+                <li>
+                  <a class="link-item" href="">
+                    Standard
+                  </a>
+                </li>
+                <li>
+                  <a class="link-item" href="">
+                    Premium and Luxury
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-4" id="offers-col-sm-6">
+              <h5>
+                <span class="text-primary">2.&nbsp;</span>
+                Easy Payment
+              </h5>
+              <ul class="list-xs">
+                <li>
+                  <a class="link-item" href="">
+                    Cheques
+                  </a>
+                </li>
+                <li>
+                  <a class="link-item" href="">
+                    Credit Cards
+                  </a>
+                </li>
+                <li>
+                  <a class="link-item" href="">
+                    Crytpo Currency
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-4" id="offers-col-sm-6">
+              <h5>
+                <span class="text-primary">3.&nbsp;</span>
+                Benefits
+              </h5>
+              <ul class="list-xs">
+                <li>
+                  <a class="link-item" href="">
+                    Unlimited Mileage
+                  </a>
+                </li>
+                <li>
+                  <a class="link-item" href="">
+                    Full Insurance
+                  </a>
+                </li>
+                <li>
+                  <a class="link-item" href="">
+                    24/7 Assistance
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+              <article class="box-counter">
+                <div class="box-counter-main">
+                  <div class="counter">12</div>
+                </div>
+                <div class="box-counter-title">
+                  <hr class="horizontal-line" />
+                  CAR<br />TYPES
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+              <article class="box-counter">
+                <div class="box-counter-main">
+                  <div class="counter">120</div>
+                </div>
+                <div class="box-counter-title">
+                  <hr class="horizontal-line" />
+                  CARS&<br />
+                  VEHICLES
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+              <article class="box-counter">
+                <div class="box-counter-main">
+                  <div class="counter">45</div>
+                </div>
+                <div class="box-counter-title">
+                  <hr class="horizontal-line" />
+                  YEARS OF<br />
+                  EXPERIENCE
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3" id='offers-col-lg-3'>
+          <div class="heading-4">
+            WHAT <br />
+            WE OFFER
+          </div>
+          <div class="heading-5"> Our company provides a variety of useful options to our new and regular clients!
+            Book us today for the best offers availale!!!
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blurb">
+    <div class="container">
+      <div class="row row-40">
+        <div class="col-sm-6 col-md-4">
+          <div class="blurb-minimal unit unit-spacing-sm flex-column flex-lg-row">
+            <div class="unit-left">
+              <div class="blurb-minimal-icon linearicons-star">
+                <span class="lnr lnr-star"></span>
+              </div>
+            </div>
+            <div class="unit-body">
+              <h5 class="blurb-minimal-title">Quality Service</h5>
+              <p class="blurb-minimal-exception">We deliver high-quality service to all our stakeholders</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="blurb-minimal unit unit-spacing-sm flex-column flex-lg-row">
+            <div class="unit-left">
+              <div class="blurb-minimal-icon linearicons-star">
+                <span class="lnr lnr-map-marker"></span>
+              </div>
+            </div>
+            <div class="unit-body">
+              <h5 class="blurb-minimal-title">Diversified Locations</h5>
+              <p class="blurb-minimal-exception">You can rent our cars in any part of UK</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="blurb-minimal unit unit-spacing-sm flex-column flex-lg-row">
+            <div class="unit-left">
+              <div class="blurb-minimal-icon linearicons-star">
+                <span class="lnr lnr-users"></span>
+              </div>
+            </div>
+            <div class="unit-body">
+              <h5 class="blurb-minimal-title">Team of Experts</h5>
+              <p class="blurb-minimal-exception">Our highly trained professionals can handle any rental queries</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Team -->
+
+
+  <div class="pre-footer-classic bg-gray-700 context-dark">
+    <div class="container">
+      <div class="row row-30 justify-content-lg-between">
+        <div class="col-sm-6 col-lg-3 col-xl-3">
+          <h5 class="font-weight-medium header">Address</h5>
+          <ul class="list list-sm">
+            <li>
+              <p class="font-weight-regular">1418 Kumasi Drive,</p>
+            </li>
+            <li>
+              <p class="font-weight-regular">Suite 1234 Burma Camp</p>
+            </li>
+            <li>
+              <p class="font-weight-regular">P.O Box 1232</p>
+            </li>
+            <li>
+              <p class="font-weight-regular">ENGLAND</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <h5 class="font-weight-medium">Contacts</h5>
+          <dl class="list-terms-custom">
+            <dt class="font-weight-regular">
+              <span class="icon icon-xs lnr lnr-phone-handset"></span>
+            </dt>
+            <dd>
+              <a class="link-default" href="tel:#">1-234-5678</a>
+            </dd>
+          </dl>
+
+          <dl class="list-terms-custom">
+            <dt class="font-weight-regular"><span class="icon icon-xs lnr lnr-envelope"></span>
+            </dt>
+            <dd><a class="link-default" href="mailto:#">swoosh12@gmail.com</a></dd>
+          </dl>
+
+
+        </div>
+        <div class="col-lg-4">
+          <ul class="list-inline list-inline-sm header">
+            <li><a class="icon icon-sm icon-gray-filled icon-circle mdi mdi-facebook" href="#"></a></li>
+            <li><a class="icon icon-sm icon-gray-filled icon-circle mdi mdi-instagram" href="#"></a></li>
+            <li><a class="icon icon-sm icon-gray-filled icon-circle mdi mdi-behance" href="#"></a></li>
+            <li><a class="icon icon-sm icon-gray-filled icon-circle mdi mdi-twitter" href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.js"></script>
+  <script
+    src="https://rawgit.com/Eonasdan/bootstrap-datetimepicker/development/src/js/bootstrap-datetimepicker.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+  <script>
+    $(window).on("scroll", function () {
+      if ($(window).scrollTop() > 50) {
+        $('.navbar').addClass("black");
+      } else {
+        $(".navbar").removeClass("black");
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    $(function () {
+      $('#datetimepicker1').datetimepicker();
+    });
+  </script>   
+                <script type="text/javascript" src="wow.min.js"> </script>
+                <script> new WOW().init();</script>
+</body>
+
+</html>
